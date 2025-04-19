@@ -1,0 +1,120 @@
+type: collection.insomnia.rest/5.0
+name: GameLibrary
+meta:
+  id: wrk_3a9ec054ee9340a1900603c98183837a
+  created: 1743012729537
+  modified: 1745074704625
+collection:
+  - url: http://localhost:8080/games
+    name: New Request
+    meta:
+      id: req_5b7d6372be4f41e1a3f087a3340f75d8
+      created: 1743012734897
+      modified: 1745074683907
+      isPrivate: false
+      sortKey: -1743012734897
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "title": "Behead those who insult Skibidi Toilet",
+            "genre": "Visual Novel",
+            "platform": "Nintendo Switch"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/10.3.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games
+    name: New Request
+    meta:
+      id: req_aa902a7f7dc64334abb837ace48017fa
+      created: 1745053784367
+      modified: 1745053788412
+      isPrivate: false
+      sortKey: -1745053784367
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games/15
+    name: New Request
+    meta:
+      id: req_ced810543c5b4d8fbbef8cb20f2c8047
+      created: 1745056279609
+      modified: 1745074172538
+      isPrivate: false
+      sortKey: -1745056279609
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "title": "Super Mario 69",
+            "genre": "First-Person Shooter",
+            "platform": "Aardappel"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/games/14
+    name: New Request
+    meta:
+      id: req_f26ade98b1284630b7af774e510a3133
+      created: 1745056763587
+      modified: 1745073780593
+      isPrivate: false
+      sortKey: -1745056763587
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.2
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_87c49ae5a5c69e0f1e2d0499fee2ee4be68fae73
+    created: 1743012729554
+    modified: 1743012729554
+environments:
+  name: Base Environment
+  meta:
+    id: env_87c49ae5a5c69e0f1e2d0499fee2ee4be68fae73
+    created: 1743012729545
+    modified: 1743012729545
+    isPrivate: false
